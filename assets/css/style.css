@@ -100,10 +100,25 @@
 [data-opacity="9"]::before {
   opacity: 0.9;
 }
+
+/* Add these new styles at the beginning of your CSS file */
+.site-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: 1040px) {
+  .site-container {
+    max-width: 1920px;
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  background: #f4f3e7;
 }
 h1,
 h2,
@@ -328,7 +343,7 @@ hr {
   background: #ff3500;
 }
 .btn {
-  background: #ff5600;
+  background: #ffd700;
   padding: 27px 44px;
   color: #fff;
   cursor: pointer;
@@ -356,7 +371,7 @@ hr {
   top: 0;
   width: 101%;
   height: 101%;
-  background: #e74d00;
+  background: #ffd700;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -405,24 +420,24 @@ hr {
   height: 60px;
   padding: 10px 20px;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   text-transform: capitalize;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 0px;
 }
 .border-btn {
   border: 1px solid #ff5600;
-  color: #464d65;
-  background: none;
+  color: #f2834c;
+  background: #74d990;
   border-radius: 5px;
   text-transform: capitalize;
   padding: 19px 47px;
   -moz-user-select: none;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 0;
   position: relative;
@@ -495,6 +510,8 @@ hr {
   margin: auto;
   position: fixed;
   top: 0;
+  align-items: center;
+  max-width: 1920px;
   width: 100%;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -1992,9 +2009,14 @@ hr {
   color: #ff5600;
 }
 /* Header Area Styles */
+.header-area {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
 .header-area .main-header {
-  padding: 0px 20px;
-  background-color: #f9f5f1;
+  padding: 0;
+  background-color: #f4f3e7;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -2162,8 +2184,8 @@ hr {
 /* Hero Section Styles */
 .slider-height {
   position: relative;
-  min-height: 100vh;
-  background-color: #f9f5f1;
+  min-height: 80vh;
+  background-color: #f4f3e7;
   display: flex;
   flex-direction: row;
 }
@@ -2181,15 +2203,26 @@ hr {
   background-size: cover;
 }
 
+.slider-area {
+  position: relative;
+  min-height: 80vh;
+  background-color: #f4f3e7;
+}
+
 .slider-area .container {
   position: relative;
   z-index: 1;
-  max-width: 50%;
+  max-width: 100%;
   margin-left: 0;
-  padding: 4rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero__caption {
+  width: 50%;
+  padding: 2rem;
 }
 
 .slider-area .hero__caption {
@@ -2224,7 +2257,7 @@ hr {
 }
 
 .slider-area .hero__btn .btn {
-  background-color: #ffd700;
+  background-color: #ff5600;
   border: none;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -2233,6 +2266,7 @@ hr {
 }
 
 /* Responsive Styles */
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-height {
     min-height: 900px;
@@ -2247,6 +2281,14 @@ hr {
   .slider-height {
     min-height: 700px;
   }
+  .slider-height::after {
+    content: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .hero__caption {
+    width: 100%;
+  }
   .slider-area .hero__caption {
     padding-top: 100px;
   }
@@ -2260,6 +2302,9 @@ hr {
   .slider-height {
     min-height: 600px;
   }
+  .hero__caption {
+    width: 100%;
+  }
   .slider-area .hero__caption {
     padding-top: 100px;
   }
@@ -2270,6 +2315,9 @@ hr {
 }
 
 @media (max-width: 575px) {
+  .hero__caption {
+    width: 100%;
+  }
   .slider-area .hero__caption span {
     margin-bottom: 30px;
     font-size: 16px;
@@ -2292,6 +2340,8 @@ hr {
   }
   .slider-height::after {
     content: none;
+    width: 100%;
+    margin-right: 0;
   }
   .slider-area .container {
     max-width: 100%;
@@ -2548,6 +2598,37 @@ hr {
   border: 0;
   cursor: pointer;
 }
+
+/* Wave Divider */
+.wave-container {
+  height: 20vh;
+  background-color: #f4f3e7;
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 67px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 39vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  125' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 92L50 86C100 81 200 69 300 47C400 24 500 -10 600 2C700 13 800 69 900 92C1000 115 1100 103 1150 98L1200 92V126H1150C1100 126 1000 126 900 126C800 126 700 126 600 126C500 126 400 126 300 126C200 126 100 126 50 126H0V92Z' fill='%23bfd9ed'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 33.5px;
+  }
+}
+
+.gallery-top {
+  background: #bfd9ed;
+}
+
 .gallery-area .gallery-box .single-gallery {
   overflow: hidden;
   z-index: 0;
