@@ -427,9 +427,9 @@ hr {
   border-radius: 0px;
 }
 .border-btn {
-  border: 1px solid #ff5600;
-  color: #f2834c;
-  background: #74d990;
+  border: 1px solid #74d990;
+  color: #fff;
+  background: #ff5600;
   border-radius: 5px;
   text-transform: capitalize;
   padding: 19px 47px;
