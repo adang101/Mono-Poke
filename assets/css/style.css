@@ -383,7 +383,7 @@ hr {
 }
 .btn:hover::before {
   transform: scaleX(1);
-  color: #fff !important;
+  color: #ff5600 !important;
   z-index: -1;
 }
 .btn.focus,
@@ -394,12 +394,62 @@ hr {
 .header-btn {
   padding: 30px 45px;
 }
+.header-right-btn {
+  margin-left: 20px;
+}
+
+.header-right-btn .header-btn {
+  padding: 20px 35px;
+  background: #ff5600;
+  border: 1px solid #ff5600;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* New styles for hover effect */
+.header-right-btn .header-btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.4s linear;
+  border-radius: 25px;
+}
+
+.header-right-btn .header-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 105%;
+  height: 105%;
+  background: #ffd700;
+  z-index: -1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  border-radius: 25px;
+}
+
+.header-right-btn .header-btn:hover::before {
+  transform: scaleX(1);
+  color: #ff5600 !important;
+  z-index: -1;
+}
+
+.header-right-btn .header-btn:hover {
+  color: #fff;
+  border-color: #ffd700;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-btn {
     padding: 27px 21px;
   }
 }
 .hero-btn {
+  max-width: 114.5px;
   padding: 30px 43px;
 }
 @media (max-width: 575px) {
@@ -427,7 +477,7 @@ hr {
   border-radius: 0px;
 }
 .border-btn {
-  border: 1px solid #74d990;
+  border: 1px solid #ff5600;
   color: #fff;
   background: #ff5600;
   border-radius: 5px;
