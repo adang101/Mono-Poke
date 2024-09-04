@@ -2807,8 +2807,6 @@ hr {
   position: relative;
   background: transparent;
   padding: 5px 22px;
-  border-radius: 0;
-  border: 0;
   color: #212025;
 }
 .gallery-area .nav-tabs .nav-link::after {
@@ -2832,7 +2830,49 @@ hr {
   display: block;
   color: #1b1b1b;
   font-size: 16px;
+  border-radius: 3px;
+  border: 2;
+  border-color: #d17142;
 }
+.tab-content {
+  background-color: #bfd9ed;
+}
+.tab-size {
+  max-width: 1400px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.active.show {
+  display: block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+  .tab-size {
+    max-width: 1200px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tab-size {
+    max-width: 900px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tab-size {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tab-size {
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gallery-area .nav-tabs .nav-item {
     margin: 0 15px;
