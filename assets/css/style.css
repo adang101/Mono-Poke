@@ -189,6 +189,13 @@ a {
 a:hover {
   color: #fff;
 }
+.custom-footer {
+  background-color: #caefc5;
+}
+
+.custom-footer .footer-area {
+  background-image: none;
+}
 a:focus,
 a:hover,
 .portfolio-cat a:hover,
@@ -3260,7 +3267,7 @@ hr {
   }
 }
 .footer-area .footer-top .single-footer-caption .footer-tittle h4 {
-  color: #fff;
+  color: #ff5600;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   margin-bottom: 38px;
@@ -3272,7 +3279,7 @@ hr {
   text-transform: capitalize;
 }
 .footer-area .footer-top .single-footer-caption .footer-tittle ul li a {
-  color: #868c98;
+  color: #ff5500;
   font-weight: 300;
 }
 .footer-area .footer-top .single-footer-caption .footer-tittle ul li a:hover {
