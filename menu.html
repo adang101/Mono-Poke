@@ -47,7 +47,7 @@
         <!-- Gallery Top Start -->
         <div
           class="gallery-top section-bg pt-90 pb-40"
-          data-background="assets/img/gallery/section_bg01.png"
+          data-background="assets/img/gallery/"
         >
           <div class="container">
             <div class="row justify-content-center">
@@ -72,7 +72,17 @@
                       role="tab"
                       aria-controls="nav-home"
                       aria-selected="true"
-                      >Special</a
+                      >Step 1: Bowl Size</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-size-tab"
+                      data-toggle="tab"
+                      href="#nav-size"
+                      role="tab"
+                      aria-controls="nav-size"
+                      aria-selected="false"
+                      >Step 2: Proteins</a
                     >
                     <a
                       class="nav-item nav-link"
@@ -83,7 +93,7 @@
                       aria-controls="nav-profile"
                       aria-selected="false"
                     >
-                      Lunch</a
+                      Step 3: Sauce</a
                     >
                     <a
                       class="nav-item nav-link"
@@ -94,7 +104,7 @@
                       aria-controls="nav-contact"
                       aria-selected="false"
                     >
-                      Brakefirst
+                      Step 4: Toppings
                     </a>
                     <a
                       class="nav-item nav-link"
@@ -105,7 +115,7 @@
                       aria-controls="nav-dinner"
                       aria-selected="false"
                     >
-                      Dinner
+                      Drinks & Sides
                     </a>
                   </div>
                 </nav>
@@ -119,344 +129,735 @@
         <div class="container-fluid p-0">
           <!-- Nav Card -->
           <div class="tab-content" id="nav-tabContent">
-            <!-- card one -->
-            <div
-              class="tab-pane fade show active"
-              id="nav-home"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
-            >
-              <div class="row no-gutters">
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery1.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+            <div class="tab-size">
+              <!-- card one (Bowl Size) -->
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <div class="scoop-title">CHOOSE YOUR SIZE</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/bowl1.jpg"
+                        alt="Small poke bowl"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Small</h3>
+                      <div class="size-box">
+                        <p>1 Scoop Protein</p>
+                        <p class="price">$10</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/bowl1.jpg"
+                        alt="Medium Poke Bowl"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Medium</h3>
+                      <div class="size-box">
+                        <p>2 Scoops Protein</p>
+                        <p class="price">$13</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/bowl1.jpg"
+                        alt="Large Poke Bowl"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Large</h3>
+                      <div class="size-box">
+                        <p>3 Scoops Protein</p>
+                        <p class="price">$16</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/bowl1.jpg"
+                        alt="Extra Scoop"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Extra Scoop</h3>
+                      <div class="size-box">
+                        <p>1 Scoop Protein</p>
+                        <p class="price">$3</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery2.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+                <div class="scoop-title">CHOOSE YOUR BASE</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/bowl1.jpg"
+                      alt="White rice"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>White Rice</h3>
+                      <div class="size-box">
+                        <p></p>
+                        <p class="price"></p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                  <div class="row no-gutters">
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery3.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery4.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/bowl1.jpg"
+                      alt="Brown rice"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Brown Rice</h3>
+                      <div class="size-box">
+                        <p></p>
+                        <p class="price"></p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- Card two -->
-            <div
-              class="tab-pane fade"
-              id="nav-profile"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
-            >
-              <div class="row no-gutters">
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery2.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery1.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                  <div class="row no-gutters">
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery3.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery4.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/bowl1.jpg"
+                      alt="Seasonal Greens"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Seasonal Greens</h3>
+                      <div class="size-box">
+                        <p></p>
+                        <p class="price"></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Card three -->
-            <div
-              class="tab-pane fade"
-              id="nav-contact"
-              role="tabpanel"
-              aria-labelledby="nav-contact-tab"
-            >
-              <div class="row no-gutters">
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery1.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+              <!-- card two (Protein) -->
+              <div
+                class="tab-pane fade"
+                id="nav-size"
+                role="tabpanel"
+                aria-labelledby="nav-size-tab"
+              >
+                <div class="scoop-title">CHOOSE YOUR PROTEIN</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <div class="content-container">
+                      <h3>Salmon</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <div class="content-container">
+                      <h3>Octopus</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <div class="content-container">
+                      <h3>Tuna</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/spicy-tuna.jpg"
+                        alt="Spicy Tuna"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Spicy Tuna</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/albacore.jpg"
+                        alt="Albacore"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Albacore</h3>
+                      <div class="size-box">
+                        <p>+MP</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery2.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/spicy-salmon.jpg"
+                        alt="Spicy Salmon"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Spicy Salmon</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/yellow-tail.jpg"
+                        alt="Yellow Tail"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Yellow Tail</h3>
+                      <div class="size-box">
+                        <p>+MP</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                  <div class="row no-gutters">
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery3.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
-                      </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/crabmeat.jpg"
+                        alt="Crabmeat"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Crabmeat</h3>
                     </div>
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery4.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img
+                        src="assets/img/gallery/shrimp.jpg"
+                        alt="Shrimp"
+                      />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Shrimp</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                      <img src="assets/img/gallery/tofu.jpg" alt="Tofu" />
+                    </div> -->
+                    <div class="content-container">
+                      <h3>Tofu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card three (Sauces) -->
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                <div class="scoop-title">CHOOSE YOUR SAUCES</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/house-sauce.jpg"
+                      alt="House Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>House Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/poke-sauce-traditional.jpg"
+                      alt="Poké Sauce Traditional"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Poké Sauce Traditional</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/poke-sauce-gluten-free.jpg"
+                      alt="Poké Sauce/Gluten Free"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Poké Sauce</h3>
+                      <p>Gluten Free</p>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/sweet-spicy-sauce.jpg"
+                      alt="Sweet & Spicy Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Sweet & Spicy Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/spicy-sauce.jpg"
+                      alt="Spicy Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Spicy Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/spicy-mayo.jpg"
+                      alt="Spicy Mayo"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Spicy Mayo</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/ponzu-sauce.jpg"
+                      alt="Ponzu Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Ponzu Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/teriyaki-sauce.jpg"
+                      alt="Teriyaki Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Teriyaki Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/eel-sauce.jpg"
+                      alt="Eel Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Eel Sauce</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/sesame-oil.jpg"
+                      alt="Sesame Oil"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Sesame Oil</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/extra-sauce.jpg"
+                      alt="Extra 2 Oz Sauce"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Extra Sauce</h3>
+                      <div class="size-box">
+                        <p>2 oz</p>
+                        <p class="price">$0.60</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Card Four -->
-            <div
-              class="tab-pane fade"
-              id="nav-dinner"
-              role="tabpanel"
-              aria-labelledby="nav-dinner"
-            >
-              <div class="row no-gutters">
-                <div class="col-lg-5 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery3.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+              <!-- Card four (Toppings) -->
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                <div class="scoop-title">CHOOSE YOUR TOPPINGS</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/jalapeno.jpg"
+                      alt="Jalapeno"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Jalapeno</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/almonds.jpg"
+                      alt="Almonds"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Almonds</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/cucumber.jpg"
+                      alt="Cucumber"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Cucumber</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/red-bell-pepper.jpg"
+                      alt="Red Bell Pepper"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Red Bell Pepper</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/white-onion.jpg"
+                      alt="White Onion"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>White Onion</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/ginger.jpg"
+                      alt="Ginger"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Ginger</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/green-onion.jpg"
+                      alt="Green Onion"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Green Onion</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/wasabi.jpg"
+                      alt="Wasabi"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Wasabi</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/edamame.jpg"
+                      alt="Edamame"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Edamame</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/pineapple.jpg"
+                      alt="Pineapple"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Pineapple</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/seaweed-salad.jpg"
+                      alt="Seaweed Salad"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Seaweed Salad</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/sweet-corn.jpg"
+                      alt="Sweet Corn"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Sweet Corn</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/cilantro.jpg"
+                      alt="Cilantro"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Cilantro</h3>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/avocado.jpg"
+                      alt="Add Avocado"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Add Avocado</h3>
+                      <div class="size-box">
+                        <p>$2</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!--<div class="image-container">
+                    <img
+                      src="assets/img/gallery/masago.jpg"
+                      alt="Add Masago"
+                    />
+                  </div>-->
+                    <div class="content-container">
+                      <h3>Add Masago</h3>
+                      <div class="size-box">
+                        <p>$1</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="gallery-box">
-                    <div class="single-gallery">
-                      <div
-                        class="gallery-img big-img"
-                        style="
-                          background-image: url(assets/img/gallery/gallery4.png);
-                        "
-                      ></div>
-                      <div class="g-caption">
-                        <span>$25</span>
-                        <h4>Delicious Food</h4>
-                        <p>Ut enim ad minim veniam quis nostr.</p>
-                        <a href="#" class="btn order-btn">Order Now</a>
+              </div>
+              <!-- Card five (Drinks & Sides) -->
+              <div
+                class="tab-pane fade"
+                id="nav-dinner"
+                role="tabpanel"
+                aria-labelledby="nav-dinner"
+              >
+                <div class="scoop-title">Sides & Drinks</div>
+                <div class="scoop-container">
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/medium-fountain-drink.jpg"
+                      alt="Medium Fountain Drink"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Medium Fountain Drink</h3>
+                      <div class="size-box">
+                        <p>$2.5</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                  <div class="row no-gutters">
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery1.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/large-fountain-drink.jpg"
+                      alt="Large Fountain Drink"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Large Fountain Drink</h3>
+                      <div class="size-box">
+                        <p>$3</p>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-md-6 col-sm-6">
-                      <div class="gallery-box">
-                        <div class="single-gallery">
-                          <div
-                            class="gallery-img smoll-img"
-                            style="
-                              background-image: url(assets/img/gallery/gallery2.png);
-                            "
-                          ></div>
-                          <div class="g-caption">
-                            <span>$25</span>
-                            <h4>Delicious Food</h4>
-                            <p>Ut enim ad minim veniam quis nostr.</p>
-                            <a href="#" class="btn order-btn">Order Now</a>
-                          </div>
-                        </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/bottle-drinks.jpg"
+                      alt="Bottle Drinks"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Bottle Drinks</h3>
+                      <div class="size-box">
+                        <p>$3</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/premium-bottle-drinks.jpg"
+                      alt="Premium Bottle Drinks"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Premium Bottle Drinks</h3>
+                      <div class="size-box">
+                        <p>$4</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/japanese-tea-coffee-latte.jpg"
+                      alt="Japanese Tea/Coffee Latte"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Japanese Tea/Coffee Latte</h3>
+                      <div class="size-box">
+                        <p>$4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/macaroon-ice-cream.jpg"
+                      alt="Macaroon Ice Cream"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Macaroon Ice Cream</h3>
+                      <div class="size-box">
+                        <p>$5</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/miso-soup.jpg"
+                      alt="Miso Soup 8oz"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Miso Soup 8oz</h3>
+                      <div class="size-box">
+                        <p>$5</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/half-avocado.jpg"
+                      alt="Half Avocado"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Half Avocado</h3>
+                      <div class="size-box">
+                        <p>$2</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img src="assets/img/gallery/chips.jpg" alt="Chips" />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Chips</h3>
+                      <div class="size-box">
+                        <p>$3</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="scoop-item">
+                    <!-- <div class="image-container">
+                    <img
+                      src="assets/img/gallery/masago.jpg"
+                      alt="Masago"
+                    />
+                  </div> -->
+                    <div class="content-container">
+                      <h3>Masago</h3>
+                      <div class="size-box">
+                        <p>$1</p>
                       </div>
                     </div>
                   </div>
@@ -469,65 +870,6 @@
         <!-- Gallery Bottom End -->
       </section>
       <!-- gallery Products End -->
-      <!--? Our Services Start -->
-      <div class="our-services section-padding30">
-        <div class="container">
-          <div class="row justify-content-sm-center">
-            <div class="cl-xl-7 col-lg-8 col-md-10">
-              <!-- Section Tittle -->
-              <div class="section-tittle text-center mb-70">
-                <span>Servicees We Offer</span>
-                <h2>Our Best Services</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <span class="flaticon-restaurant"></span>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">Best Chef</a></h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services active text-center mb-30">
-                <div class="services-ion">
-                  <span class="flaticon-tools-and-utensils-1"></span>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">Quality Food</a></h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <span class="flaticon-restaurant"></span>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">Perfect Cook</a></h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Our Services End -->
     </main>
     <footer></footer>
     <!-- Scroll Up -->
