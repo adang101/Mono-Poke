@@ -2975,12 +2975,31 @@ hr {
   background-color: rgb(253 251 247);
 }
 
+.scoop-sub-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 10px;
+  color: #0b0e0d;
+  background-color: rgb(253 251 247);
+}
+
 .scoop-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  background-color: rgb(253 251 247);
+  /* #bfd9ed*/
+  justify-content: center;
+}
+
+.scoop-sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
   background-color: rgb(253 251 247);
   /* #bfd9ed*/
   justify-content: center;
