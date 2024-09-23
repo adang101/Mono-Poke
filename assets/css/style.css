@@ -135,7 +135,7 @@ h6 {
 }
 p {
   font-family: "Poppins", sans-serif;
-  color: #10285d;
+  color: #050a15;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 15px;
@@ -609,10 +609,10 @@ hr {
   color: #fff;
 }
 .sticky-bar {
-  left: 0;
   margin: auto;
   position: fixed;
   top: 0;
+  display: grid;
   align-items: center;
   max-width: 1920px;
   width: 100%;
