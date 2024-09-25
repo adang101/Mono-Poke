@@ -2469,29 +2469,6 @@ hr {
     width: 100%;
   }
 }
-
-/* Slider Dots for Mobile */
-.slider-dots {
-  display: none;
-}
-
-@media (max-width: 991px) {
-  .slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  .slider-dots .dot {
-    width: 8px;
-    height: 8px;
-    background-color: #ccc;
-    border-radius: 50%;
-  }
-  .slider-dots .dot.active {
-    background-color: #333;
-  }
-}
 .about-low-area .about-caption p {
   font-size: 16px;
   color: #212025;
