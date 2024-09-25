@@ -1944,6 +1944,9 @@ hr {
     padding-bottom: 70px;
   }
 }
+.menufy-logo {
+  border-radius: 30px;
+}
 .section-paddingt30 {
   padding-top: 195px;
   padding-bottom: 90px;
