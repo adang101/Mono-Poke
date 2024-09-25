@@ -533,7 +533,7 @@ hr {
   border: 1px solid #ff5900;
   color: #fff;
   background: #ff5900;
-  border-radius: 5px;
+  border-radius: 25px;
   text-transform: capitalize;
   padding: 19px 47px;
   -moz-user-select: none;
@@ -569,7 +569,7 @@ hr {
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleY(0);
-  border-radius: 0;
+  border-radius: 25px;
 }
 .border-btn:hover::before {
   transform: scaleY(1);
