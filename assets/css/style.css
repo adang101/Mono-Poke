@@ -2385,7 +2385,7 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-height {
-    min-height: 700px;
+    min-height: 500px;
   }
   .slider-height::after {
     content: none;
@@ -2406,7 +2406,7 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .slider-height {
-    min-height: 600px;
+    min-height: 100px;
   }
   .hero__caption {
     width: 100%;
@@ -2451,7 +2451,7 @@ hr {
   }
   .slider-area .container {
     max-width: 100%;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     order: 2;
   }
   .slider-area::before {
@@ -2553,11 +2553,23 @@ hr {
   .about-area2 .about-caption {
     padding-left: 0px;
   }
+  .about-img {
+    padding-top: 20px;
+  }
+  .contact-info {
+    padding-top: 50px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-area2 .about-caption {
     padding-top: 50px;
     padding-left: 0px;
+  }
+  .about-img {
+    padding-top: 20px;
+  }
+  .contact-info {
+    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2565,11 +2577,23 @@ hr {
     padding-top: 50px;
     padding-left: 0px;
   }
+  .about-img {
+    padding-top: 20px;
+  }
+  .contact-info {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 575px) {
   .about-area2 .about-caption {
     padding-top: 40px;
     padding-left: 0px;
+  }
+  .about-img {
+    padding-top: 20px;
+  }
+  .contact-info {
+    padding-top: 50px;
   }
 }
 .about-area2 .about-caption .pera-top {
@@ -2692,7 +2716,6 @@ hr {
   border: 0;
   cursor: pointer;
 }
-
 .gallery-top {
   background: rgb(253 251 247);
 }
@@ -2815,7 +2838,7 @@ hr {
 }
 .gallery-area .nav-tabs {
   margin-bottom: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   position: relative;
   border: 0;
   display: flex;
@@ -2880,6 +2903,9 @@ hr {
   .tab-size {
     max-width: 900px;
   }
+  .gallery-area .nav-tabs .nav-item {
+    margin: 5px 15px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tab-size {
@@ -2893,17 +2919,17 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .gallery-area .nav-tabs .nav-item {
-    margin: 0 15px;
+    margin: 5px 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .gallery-area .nav-tabs .nav-item {
-    margin: 0 0px;
+    margin: 5px 5px;
   }
 }
 @media (max-width: 575px) {
   .gallery-area .nav-tabs .nav-item {
-    margin: 15px 0px;
+    margin: 15px 5px;
   }
 }
 .gallery-area .nav-tabs .nav-item.show .nav-link,
