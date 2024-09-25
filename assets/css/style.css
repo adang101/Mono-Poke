@@ -551,7 +551,7 @@ hr {
 }
 @media (max-width: 575px) {
   .border-btn {
-    display: none;
+    display: flex;
   }
 }
 .border-btn::before {
