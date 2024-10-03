@@ -2978,7 +2978,7 @@ hr {
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
-  padding: 30px 30px;
+  padding: 10px 30px;
   color: #0b0e0d;
   background-color: rgb(253 251 247);
 }
@@ -3012,13 +3012,14 @@ hr {
 .scoop-item {
   flex: 0 0 auto;
   display: flex;
+  flex-direction: column;
   background-color: rgb(249 246 240);
   border: 2px solid #d0d0d0;
   border-radius: 8px;
   overflow: hidden;
   width: 350px;
   min-height: 88px;
-
+  transition: all 0.3s ease;
 }
 
 .image-container {
@@ -3062,11 +3063,37 @@ hr {
   margin: 0;
 }
 .flavors {
-  flex: 1;
-  padding-right: 10px;
+  display: none;
+  padding-top: 10px;
   font-size: 14px;
   color: #666;
   word-wrap: break-word;
+}
+.button-container {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+.see-flavors-btn {
+  width: 40%;
+  background-color: rgb(253 251 247);
+  border: 1px solid #ff5900;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-weight: 900px;
+  border-radius: 4px;
+  color: #cf4500; /* Changed text color to match border for better visibility */
+  transition: all 0.3s ease;
+}
+.see-flavors-btn:hover {
+  background-color: #ff5900;
+  color: rgb(253 251 247);
+}
+.expanded {
+  min-height: 200px;
+}
+.expanded .flavors {
+  display: block;
 }
 
 .price {

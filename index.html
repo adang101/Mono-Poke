@@ -549,15 +549,20 @@
                   >
                     <div class="scoop-title">Sides</div>
                     <div class="scoop-container">
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="macaroon">
                         <div class="content-container">
                           <h3>Macaroon Ice Crème</h3>
                           <div class="size-box">
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
+                            <p class="price">$5</p>
+                          </div>
+                          <div class="flavors">
                             <p>
                               Chocolate, Coconut, Coffee, Green Tea, Mango,
                               Raspberry, Rosewater, Thai Tea, Vanilla
                             </p>
-                            <p class="price">$5</p>
                           </div>
                         </div>
                       </div>
@@ -579,14 +584,17 @@
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="chips">
                         <div class="content-container">
                           <h3>Chips</h3>
                           <div class="size-box">
-                            <p>
-                              BBQ, Jalapeño, Maui Onion, Salt & Vinegar, Sea Salt, Sour Cream
-                            </p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div> 
                             <p class="price">$3</p>
+                          </div>
+                          <div class="flavors">
+                            <p>BBQ, Jalapeño, Maui Onion, Salt & Vinegar, Sea Salt, Sour Cream</p>
                           </div>
                         </div>
                       </div>
@@ -601,91 +609,134 @@
                       </div>
                     </div>
 
+                    <!-- Drinks -->
                     <div class="scoop-title">Drinks</div>
                     <div class="scoop-container">
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="fountain-drink">
                         <div class="content-container">
                           <h3>Fountain Drink</h3>
                           <div class="size-box">
-                            <p>Medium<br>Large</p>
-                            <p class="price">$2.5<br>$3</p>
+                            <p>Med / Lrg</p>
+                            <p class="price">$2.5 / $3</p>
+                          </div>
+                          <div class="button-container">
+                            <button class="see-flavors-btn" onclick="toggleFlavors()">See Flavors</button>
+                          </div>
+                          <div class="flavors">
+                              <p>Dr Pepper, Orange Crush, Pepsi, Pepsi Zero, Starry, Stubborn Black Cherry Tarragon, Stubborn Vanilla Cream, Stubborn Pineapple Cream</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="bottle-drinks">
                         <div class="content-container">
                           <h3>Bottle Drinks</h3>
                           <div class="size-box">
-                            <p>Coke, Diet Coke, Dr Pepper, Fanta, Mountain Dew, Sprite</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$3</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Coke, Diet Coke, Dr Pepper, Fanta, Mountain Dew, Sprite</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="premium-bottle">
                         <div class="content-container">
                           <h3>Premium Bottle Drinks</h3>
                           <div class="size-box">
-                            <p>Green Tea, Oolong Tea, Peach Tea</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$4</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Green Tea, Oolong Tea, Peach Tea</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="tea-latte">
                         <div class="content-container">
                           <h3>Japanese Tea / Coffee Latte</h3>
                           <div class="size-box">
-                            <p>Coffee Latte, Matcha Latte, Milk Tea</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Options</button>
+                            </div>
                             <p class="price">$4</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Coffee Latte, Matcha Latte, Milk Tea</p>
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="scoop-title">House Crafted Drinks</div>
-                    <div class="scoop-container">
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="milk-teas">
                         <div class="content-container">
                           <h3>Milk Teas</h3>
                           <div class="size-box">
-                            <p>Classic, Taro</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$6</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Classic, Taro</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="iced-teas">
                         <div class="content-container">
                           <h3>Iced Teas</h3>
                           <div class="size-box">
-                            <p>Lychee, Mango, Passion Fruit</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$5</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Lychee, Mango, Passion Fruit</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="lemonade">
                         <div class="content-container">
                           <h3>Lemonade</h3>
                           <div class="size-box">
-                            <p>Lychee, Mango, Mango Lychee, Passion Fruit, Strawberry</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$4.50</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Lychee, Mango, Mango Lychee, Passion Fruit, Strawberry</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="green-tea">
                         <div class="content-container">
                           <h3>Green Tea</h3>
                           <div class="size-box">
-                            <p>Mango, Strawberry Lychee, Passion Fruit</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$5</p>
+                          </div>
+                          <div class="flavors">
+                            <p>Mango, Strawberry Lychee, Passion Fruit</p>
                           </div>
                         </div>
                       </div>
-                      <div class="scoop-item">
+                      <div class="scoop-item" id="smoothies">
                         <div class="content-container">
                           <h3>Smoothies</h3>
                           <div class="size-box">
-                            <p>Mango, Mango Passion Fruit, Strawberry, Taro Milk</p>
+                            <div class="button-container">
+                              <button class="see-flavors-btn">See Flavors</button>
+                            </div>
                             <p class="price">$5</p>
                           </div>
+                        <div class="flavors">
+                          <p>Mango, Mango Passion Fruit, Strawberry, Taro Milk</p>
+                        </div>
                         </div>
                       </div>
                       <div class="scoop-item">
@@ -698,188 +749,6 @@
                         </div>
                       </div>
                     </div>
-                      <!-- Milk Teas -->
-                      <div class="scoop-title">Milk Teas</div>
-                      <div class="scoop-container">
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Classic</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Taro</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Iced Teas -->
-                      <div class="scoop-title">Iced Teas</div>
-                      <div class="scoop-container">
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Lychee</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Passion Fruit</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Lemonades -->
-                      <div class="scoop-title">Lemonades</div>
-                      <div class="scoop-container">
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Lychee</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">4.50</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$4.50</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango Lychee</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$4.50</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Passion Fruit</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$4.50</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Strawberry</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$4.50</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Green Teas -->
-                      <div class="scoop-title">Green Teas</div>
-                      <div class="scoop-container">
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Strawberry Lychee</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Passion Fruit</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$5</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Add Boba</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$1</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Smoothies -->
-                      <div class="scoop-title">Smoothies</div>
-                      <div class="scoop-container">
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Mango Passion Fruit</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Strawberry</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="scoop-item">
-                              <div class="content-container">
-                                  <h3>Taro Milk</h3>
-                                  <div class="size-box">
-                                    <p></p>
-                                    <p class="price">$6</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
                   </div>
                 </div>
               <!-- End Nav Card -->
@@ -1122,5 +991,15 @@
 
     <!-- Load Footer -->
     <script src="assets/js/include-footer.js"></script>
+
+    <script>
+      document.querySelectorAll('.see-flavors-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const item = this.closest('.scoop-item');
+            item.classList.toggle('expanded');
+            this.textContent = item.classList.contains('expanded') ? 'Hide Flavors' : 'See Flavors';
+        });
+    });
+  </script>
   </body>
 </html>
