@@ -3337,7 +3337,7 @@ hr {
 .our-services .single-services .services-cap h5 a {
   font-weight: 600;
   font-size: 25px;
-  color: #15181d;
+  color: #fff;
   line-height: 1.4;
   display: block;
 }
@@ -3353,6 +3353,52 @@ hr {
 .our-services .col-sm-6 {
   display: flex;
   margin-bottom: 10px;
+}
+
+.custom-btn {
+  background: #ff5900;
+  padding: 20px 35px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: 1px solid #ff5900;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.4s linear;
+}
+
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 108%;
+  height: 108%;
+  background: #e6c405;
+  z-index: -1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  border-radius: 25px;
+}
+
+.custom-btn:hover::before {
+  transform: scaleX(1);
+  color: #fff !important;
+  z-index: -1;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  border-color: #e6c405;
+  text-decoration: none;
 }
 
 /* Responsive adjustments */
