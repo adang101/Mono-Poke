@@ -2977,7 +2977,6 @@ hr {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  white-space: nowrap;
   padding: 10px 30px;
   color: #0b0e0d;
   background-color: rgb(253 251 247);
@@ -3105,6 +3104,18 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .scoop-title {
+    font-size: 28px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .scoop-sub-title {
+    font-size: 24px;
+    padding: 8px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
   .scoop-item {
     width: 100%;
   }
