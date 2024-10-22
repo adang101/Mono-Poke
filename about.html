@@ -32,6 +32,281 @@
       .contact-info {
         margin-bottom: 30px;
       }
+      .hero-banner {
+        position: relative;
+        height: 50vh;
+        background-image: url("./assets/img/gallery/storefront.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      }
+
+      .hero-content {
+        position: relative;
+        color: white;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .info-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 2rem;
+      }
+
+      .store-details h2,
+      .gallery-section h2,
+      .team-section h2,
+      .faq-section h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: #212025;
+      }
+
+      .location-card {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+      }
+
+      .icon-text {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .icon-text i {
+        color: #ff5900;
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+      }
+
+      .icon-text:last-child {
+        margin-bottom: 0;
+      }
+
+      .map-container {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        position: relative;
+        height: 100%;
+        min-height: 400px;
+      }
+
+      .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .directions-btn {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background: #ff5900;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid #ff5900;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .directions-btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 108%;
+        height: 108%;
+        background: #e6c405;
+        z-index: -1;
+        transition: transform 0.5s;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform: scaleX(0);
+        border-radius: 25px;
+      }
+
+      .directions-btn:hover::before {
+        transform: scaleX(1);
+      }
+
+      .directions-btn:hover {
+        color: white;
+        border-color: #e6c405;
+        text-decoration: none;
+      }
+
+      .gallery-section,
+      .team-section,
+      .faq-section {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 2rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .gallery-item {
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 1;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+      }
+
+      .team-member {
+        text-align: center;
+      }
+
+      .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+
+      .faq-item {
+        margin-bottom: 1.5rem;
+      }
+
+      .faq-question {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #212025;
+      }
+
+      .faq-answer {
+        color: #666;
+      }
+
+      .social-reviews {
+        margin-top: 2rem;
+      }
+
+      .review-platforms {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 3rem;
+      }
+
+      .platform-card {
+        display: flex;
+        background: #ff5900;
+        padding: 0.75rem 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 16px;
+        border-radius: 25px;
+        font-weight: 700;
+        text-transform: capitalize;
+        border: 1px solid #ff5900;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: color 0.4s linear;
+      }
+
+      .platform-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 108%;
+        height: 108%;
+        background: #e6c405;
+        z-index: -1;
+        transition: transform 0.5s;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform: scaleX(0);
+        border-radius: 25px;
+      }
+
+      .platform-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .platform-card:hover {
+        color: #fff;
+        border-color: #e6c405;
+        text-decoration: none;
+      }
+
+      .platform-card i {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 768px) {
+        .info-grid-container {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .map-container {
+          min-height: 300px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -101,45 +376,146 @@
           </div>
         </div>
       </div>
-      <!--? Map and Contact Info Start -->
-      <div class="container section-padding30">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="map-container">
-              <iframe
-                width="100%"
-                height="100%"
-                frameborder="0"
-                style="border: 0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3799888336475!2d-118.39813872330463!3d33.957071473193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b0d28b6546ef%3A0x75bdc7f0205d4a22!2sMono%20Poke!5e0!3m2!1sen!2sus!4v1726349800950!5m2!1sen!2sus"
-                loading="lazy"
-                title="Google Map of directions to Mono Poke"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              >
-              </iframe>
+      <!-- Info Grid -->
+      <section class="info-grid-container">
+        <!-- Left Column -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.3799888336475!2d-118.39813872330463!3d33.957071473193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b0d28b6546ef%3A0x75bdc7f0205d4a22!2sMono%20Poke!5e0!3m2!1sen!2sus!4v1726349800950!5m2!1sen!2sus"
+            loading="lazy"
+            title="Google Map of directions to MonoPoke"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          >
+          </iframe>
+          <a
+            href="https://maps.app.goo.gl/a96igvJmnxZWKpEB7"
+            class="directions-btn"
+            target="_blank"
+          >
+            <i class="fas fa-directions"></i>
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Right Column - Map -->
+        <div class="info-content">
+          <div class="store-details">
+            <h2>Find Us</h2>
+            <div class="location-card">
+              <div class="icon-text">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>8800 S. Sepulveda Blvd., Suite 3</p>
+                  <p>Los Angeles, CA 90045</p>
+                </div>
+              </div>
+
+              <div class="icon-text">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Hours</h3>
+                  <p>Monday-Saturday: 10:00 AM - 10:00 PM</p>
+                  <p>Sunday: 11:00 AM - 9:00 PM</p>
+                </div>
+              </div>
+
+              <div class="icon-text">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h3>Contact</h3>
+                  <p>(310) 338-8703</p>
+                </div>
+              </div>
             </div>
-            <a
-              href="https://maps.app.goo.gl/a96igvJmnxZWKpEB7"
-              class="custom-btn header-btn"
-              target="_blank"
-              >Get Directions</a
-            >
           </div>
-          <div class="col-lg-6">
-            <div class="contact-info">
-              <h2>Contact Us</h2>
-              <p>8800 S. Sepulveda Blvd., Suite 3, Los Angeles, CA 90045</p>
-              <p>Phone: (310) 338-8703</p>
-            </div>
-            <div class="hours-info">
-              <h2>Hours</h2>
-              <p>Monday - Saturday: 10:00 AM - 10:00 PM</p>
-              <p>Sunday: 11:00 AM - 9:00 PM</p>
+
+          <!-- Social Integration -->
+          <div class="social-reviews">
+            <h2>Connect With Us</h2>
+            <div class="review-platforms">
+              <a
+                href="https://www.yelp.com/biz/mono-poke-los-angeles-3"
+                class="platform-card"
+                target="_blank"
+              >
+                <i class="fab fa-yelp"></i>
+                <span>Yelp</span>
+              </a>
+              <a
+                href="https://www.instagram.com/monopokebowl/"
+                class="platform-card"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              loading="lazy"
+              src="./assets/img/gallery/fourPokeBowlsSauce.jpg"
+              alt="Four poke bowls with sauce on the side from MonoPoke"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              loading="lazy"
+              src="./assets/img/gallery/poke1.jpg"
+              alt="A poke bowl from MonoPoke"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              loading="lazy"
+              src="./assets/img/gallery/poke3.jpg"
+              alt="A poke bowl from MonoPoke"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              loading="lazy"
+              src="./assets/img/gallery/storefrontPoke.jpg"
+              alt="A poke bowl from MonoPoke in front of the store"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question">Do you make your drinks in house?</div>
+          <div class="faq-answer">
+            Yes, we craft our milk teas, ice teas, green teas, lemonades, and
+            smoothies in house.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Are your bowls customizable?</div>
+          <div class="faq-answer">
+            Absolutely! You can customize every aspect of your bowl from the
+            base to the toppings.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you have vegetarian options?</div>
+          <div class="faq-answer">
+            Yes, we offer tofu as a protein option and many vegetarian-friendly
+            toppings.
+          </div>
+        </div>
+      </section>
       <!-- Hero End -->
     </main>
     <footer></footer>
